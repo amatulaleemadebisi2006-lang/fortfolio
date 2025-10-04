@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title>contact</title>
+        <style>
+            .contact {
+                padding: 60px 20px;
+                max-width: 1000px;
+                margin: auto;
+            }
+            .contact h2 {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 30px;
+                color: brown;
+            }
+            .contact-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px;
+            }
+            .contact-info {
+                flex: 1;
+                min-width: 250px;
+                font-size: 1.1rem;
+                color: rgb(9, 247, 167);
+            }
+            .contact-info a {
+                color: crimson;
+                text-decoration: none;
+            }
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+            .contact-form {
+                flex: 1;
+                min-width: 300px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid;
+                border-radius: 8px;
+                font-size: 1rem;
+            }
+            .contact-form button {
+                background: peru;
+                color: pink;
+                border: none;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+            .contact-form button:hover {
+                background: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="contact" class="contact">
+            <h2>CONTACT ME</h2>
+            <p style="text-align: center; color: coral; margin-bottom: 20px;">
+            let connect! you can reach me through email, phone, or the contact from below.
+        </p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong><a href="email">Bolajiopeyemi667@gmail.com</a></p>
+            <p><strong>Phone</strong> +234 812 345 6789</p>
+            <p><strong>Location</strong>Lagos, Nigeria</p>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="your name" required>
+          <input type="email" placeholder="your email" required>
+          <textarea rows="5" placeholder="your message" required></textarea>
+           <button type="submit">send message</button>
+        </form>
+        </section>
+    </body>
+</html>

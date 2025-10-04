@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <title>project</title>
+        <style>
+            #projects {
+                padding: 60px 20px;
+                max-width: 1100px;
+                margin: auto;
+            }
+            #projects h2 {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: chocolate;
+            }
+            .project-grid {
+                display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 25px;
+            }
+            .project {
+                background: purple;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px;
+                overflow: hidden;
+                transition: transform 0.3s;
+            }
+            .project:hover {
+                transform: translateY(-6px);
+            }
+            .project img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+            .project-content {
+                padding: 20px;
+            }
+            .project-content h3 {
+                color: darkslategray;
+                margin-bottom: 10px;
+                font-size: 1.3rem;
+            }
+            .project-content p {
+                color: darkblue;
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            .video-section {
+                text-align: center;
+                padding: 60px 20px;
+                background: coral;
+                border-radius: 15px;
+            }
+            .video-section h2 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                color: burlywood;
+            }
+            .video-section video {
+                width: 300px;
+                max-width: 600px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px;
+            }
+        </style>
+    </head>
+    <section id="projeccts">
+        <h2>MY PROJECTS</h2>
+        <p style="text-align: center; margin-bottom: 30px; color: blue;">Here are some of the thing i have worked on</p>
+
+        <div class="project-grid">
+            <div class="project">
+                <img src="laptop 4.jpg" alt="web design">
+                <div class="project-content">
+                    <h3>Website Design</h3>
+                    <p>I create clean and modern websites for businesses, personal brands, and start ups.
+                        my focus is on responsive, mobile-friendly design.
+                    </p>
+                </div>
+                </div>
+                <div class="project">
+                    <img src="laptop 3.jpg" alt="Graphic Design">
+                    <div class="project-content">
+                        <h3>Graphic Design</h3>
+                        <p>I design creative flyers, posters, and social media graphics to help brands stand out.
+                            my work is simple, elegant, and eye-catching.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="laptop 2.jpg" alt="UI/UX Design">
+                    <h3>UI/UX `Design</h3>
+                    <p>I designsmooth, user-friendly interfaces for apps and digital products,
+                        making them both beautiful and functional.
+                    </p>
+                </div>
+                </div>
+    </section>
+    <section class="video-section">
+     <h2>Wacth my Introduction</h2>
+     <video autoplay muted loop id="bg-video">
+        <source src="video2.mp4" type="video/mp4">
+     </video>
+     <p>Designer | Developer | Creator</p>
+    </section>
+</html>
